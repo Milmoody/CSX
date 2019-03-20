@@ -1,0 +1,29 @@
+function disemvowel(string) {
+  // your code here...
+for(let i=0;i<string.length;i++){
+  if(string.search("a")===i){
+    return string.slice(0,i) + string.slice(i+1)
+  }else{
+    if(string.search("e")===i){
+    return string.slice(0,i) + string.slice(i+1)
+  }else{
+    if(string.search("i")===i){
+    return string.slice(0,i) + string.slice(i+1)
+  }else{
+    if(string.search("o")===i){
+    return string.slice(0,i) + string.slice(i+1)
+  }else{
+    if(string.search("u")===i){
+    return string.slice(0,i) + string.slice(i+1)
+  }else{
+    return string;
+  }
+}
+}
+  }}}}
+
+//Comment in the code below to test your function:
+
+console.log(disemvowel('CodeSmith')); // => 'CdSmth'
+// console.log(disemvowel('BANANA')); // => 'BNN'
+// console.log(disemvowel('hello world')); // => 'hll wrld'
